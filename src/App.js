@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { User, User2, User3 } from './Component/User';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>Start learning redux</h1>
+     <User/>
+
+
+     {/* props */}
+
+     <User2 data={{name:'Kamaldeep'}}/>
+     <User3 AGEdata={{age:30}}/>
     </div>
   );
 }
